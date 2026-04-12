@@ -36,7 +36,6 @@ memory_in_agents/
 ├── memory_agent.py       # Core logic: memory engine, LLM chain, chat function
 ├── MEMORY.md             # Theory and concepts of memory in AI agents
 ├── pyproject.toml        # Python dependencies
-├── qdrant_data/          # Vector DB storage (Qdrant)
 ├── notebooks/
 │   └── experiment.ipynb  # Example notebook for experiments
 └── README.md             # This documentation
@@ -89,7 +88,16 @@ python main.py
 ---
 
 ## Main Files Explained
+---
 
+## Guardrails (Input & Output Safety)
+
+This project includes basic guardrails to improve safety and reliability:
+
+- **Input validation**: User messages are checked for emptiness, excessive length, and forbidden/unsafe words before being sent to the AI.
+- **Output safety checks**: Assistant responses are scanned for unsafe phrases (e.g., related to harm, illegal activity, sensitive info) and blocked if detected.
+
+These checks can be extended for stricter or more advanced safety requirements.
 - **app.py**: Streamlit web interface for chatting with the AI coach. Handles user input, session state, and displays stored memories.
 - **memory_agent.py**: Implements the memory engine using Mem0, integrates with Groq LLM and Gemini embedder, and provides the `chat()` function.
 - **main.py**: Simple CLI entry point (prints a hello message; extend as needed).
