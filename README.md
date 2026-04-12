@@ -11,6 +11,7 @@ This project demonstrates how to build an AI agent with both short-term and long
 - **Personalized Memory**: Remembers your answers, feedback, and preferences across sessions
 - **Memory Engine**: Uses Mem0 for memory extraction, storage, and retrieval (vector DB: Qdrant)
 - **LLM Integration**: Uses Groq (Llama-3) for interview questions and Gemini for embeddings
+- **Input & Output validation**: Checking the input before passing it to the LLM and processing the output before giving harmful response to the user
 
 ---
 
@@ -36,7 +37,6 @@ memory_in_agents/
 ├── memory_agent.py       # Core logic: memory engine, LLM chain, chat function
 ├── MEMORY.md             # Theory and concepts of memory in AI agents
 ├── pyproject.toml        # Python dependencies
-├── qdrant_data/          # Vector DB storage (Qdrant)
 ├── notebooks/
 │   └── experiment.ipynb  # Example notebook for experiments
 └── README.md             # This documentation
@@ -93,7 +93,6 @@ python main.py
 - **app.py**: Streamlit web interface for chatting with the AI coach. Handles user input, session state, and displays stored memories.
 - **memory_agent.py**: Implements the memory engine using Mem0, integrates with Groq LLM and Gemini embedder, and provides the `chat()` function.
 - **main.py**: Simple CLI entry point (prints a hello message; extend as needed).
-- **qdrant_data/**: Stores vector database files for persistent memory.
 - **notebooks/experiment.ipynb**: Jupyter notebook for experimenting with memory and retrieval.
 
 ---
@@ -107,12 +106,4 @@ python main.py
 5. Combines graph and vector search results for best context
 
 See [MEMORY.md](MEMORY.md) for a deep dive into memory concepts and parameters.
-
-
-## Credits
-
-- [Mem0](https://github.com/mem0ai/mem0)
-- [LangChain](https://python.langchain.com/)
-- [Groq](https://groq.com/)
-- [Streamlit](https://streamlit.io/)
 
