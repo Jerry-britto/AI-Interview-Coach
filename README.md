@@ -116,20 +116,6 @@ These checks can be extended for stricter or more advanced safety requirements.
 
 See [MEMORY.md](MEMORY.md) for a deep dive into memory concepts and parameters.
 
----
-
-## Extending & Contributing
-
-1. Fork the repo and create a new branch
-2. Add your feature or fix
-3. Submit a pull request
-
-**Ideas:**
-- Add support for more LLMs or embedders
-- Improve the UI/UX
-- Add more memory management features
-
----
 
 ## Credits
 
@@ -138,8 +124,3 @@ See [MEMORY.md](MEMORY.md) for a deep dive into memory concepts and parameters.
 - [Groq](https://groq.com/)
 - [Streamlit](https://streamlit.io/)
 
----
-
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.
