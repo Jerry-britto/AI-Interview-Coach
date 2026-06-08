@@ -33,7 +33,6 @@ This project demonstrates how to build an AI agent with both short-term and long
 ```
 memory_in_agents/
 ├── app.py                # Streamlit UI for chat
-├── main.py               # Simple CLI entry point
 ├── memory_agent.py       # Core logic: memory engine, LLM chain, chat function
 ├── MEMORY.md             # Theory and concepts of memory in AI agents
 ├── pyproject.toml        # Python dependencies
@@ -41,6 +40,7 @@ memory_in_agents/
 │   └── experiment.ipynb  # Example notebook for experiments
 └── README.md             # This documentation
 ```
+Core files involved are app.py and memory_agent.py for implementation purpose and experiement.ipynb for experiment
 
 ---
 
