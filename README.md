@@ -48,8 +48,8 @@ Core files involved are app.py and memory_agent.py for implementation purpose an
 
 1. **Clone the repo**
 	```bash
-	git clone <repo-url>
-	cd memory_in_agents
+	git clone https://github.com/Jerry-britto/AI-Interview-Coach.git
+	cd AI-Interview-Coach
 	```
 
 2. **Create a virtual environment**
@@ -92,7 +92,6 @@ python main.py
 
 - **app.py**: Streamlit web interface for chatting with the AI coach. Handles user input, session state, and displays stored memories.
 - **memory_agent.py**: Implements the memory engine using Mem0, integrates with Groq LLM and Gemini embedder, and provides the `chat()` function.
-- **main.py**: Simple CLI entry point (prints a hello message; extend as needed).
 - **notebooks/experiment.ipynb**: Jupyter notebook for experimenting with memory and retrieval.
 
 ---
